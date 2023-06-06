@@ -1,0 +1,69 @@
+/* CSS Reset */
+:root {
+    --bg-gradient-color: linear-gradient(to bottom left, rgb(100, 100, 100, 0.5), #fff);
+    --secondary-color: rgb(14, 13, 13);
+    --secondary-color-text: #fff;
+    --border: 1px solid var(--secondary-color);
+    --h1-heading: 2.5rem;
+    --h-title-font-weight: 700;
+    --h2-heading: 2rem;
+    --p-text: 1.1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: var(--bg-gradient-color);
+}
+
+
+.header,
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding: 10px 30px;
+    background: var(--secondary-color);
+    color: var(--secondary-color-text);
+    border-bottom: 10px double #fff;
+}
+
+.main {
+    /* margin-top: 10px; */
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main img {
+    width: 300px;
+    margin-bottom: 70px;
+    border-radius: 50%;
+}
+
+.recipes ul {
+    display: flex;
+    gap: 30px;
+}
+
+.recipes ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipes li a {
+    text-decoration: none;
+    background: var(--secondary-color);
+    color: var(--secondary-color-text);
+    font-weight: var(--h1-heading);
+    border: var(--border);
+    padding: 5px 15px;
+    border-radius: 1rem;
+}
