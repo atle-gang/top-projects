@@ -1,0 +1,112 @@
+/* CSS Reset */
+:root {
+    --bg-gradient-color: linear-gradient(to bottom left, rgb(100, 100, 100, 0.5), #fff);
+    --secondary-color: rgb(14, 13, 13);
+    --secondary-color-text: #fff;
+    --border: 1px solid var(--secondary-color);
+    --h1-heading: 2.5rem;
+    --h-title-font-weight: 700;
+    --h2-heading: 2rem;
+    --p-text: 1.1rem;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-gradient-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.title-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.recipe-title {
+    margin: 20px 0;
+    width: auto;
+    background: var(--secondary-color);
+    color: var(--secondary-color-text);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
+
+
+img {
+    width: 300px;
+    border: var(--border);
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+* li,
+p {
+    font-size: var(--p-text);
+}
+
+.recipe-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ingredients-container {
+    height: auto;
+    overflow: auto;
+    width: 300px;
+    background: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--secondary-color-text);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.ingredients-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-container ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.description-container,
+.directions-container {
+    border: var(--border);
+    padding: 15px 45px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right .description-container .description-title,
+.right .directions-container .directions-title {
+    font-weight: var(--h-title-font-weight);
+    font-size: var(--h2-heading);
+    margin-bottom: 20px;
+}
+
+.directions-container ol li {
+    margin-bottom: 15px;
+
+}
